@@ -1,0 +1,296 @@
+/* 
+* www.wholewheattoast.com
+* 2012, Shawn Eisenach
+*/
+
+
+/* Table of Content
+==================================================
+	#SASSVariables
+	#Reset & Basics
+	#Basic Styles
+	#Typography
+	#Links
+	#Lists
+	#Images
+	#Forms
+	#SiteStyles
+*/
+
+
+/* #SASSVariables
+==================================================*/
+
+	$lineHeight: 1em;			/* 16px / 16px = 1em */
+	$linkColor: green;
+	$fontColor: black;
+	$containerWidth: 90%;
+
+
+/* #Reset & Basics
+================================================== */
+
+	article, aside, figure, footer, header, hgroup, menu, nav, section { display:block; } /* fix for HTML5 new elements in older browsers. */
+
+	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		font-size: 100%;
+		font: inherit;
+		vertical-align: baseline; }
+
+/* #Basic Styles
+================================================== */
+
+	body {
+   		font: normal 100% $fontColor Helvetica, Arial;
+    	line-height: $lineHeight;  
+	}
+
+/* #Typography
+================================================== */
+
+	p {
+		margin-bottom: $lineHeight;
+	}
+		
+	h1 {
+		/* font-size: 1.5em; */
+		line-height: 1.875em; 
+		font-weight: bold; 
+		}
+	h2 { 
+		/* font-size: 1em; */
+		line-height: 1.25em;
+		/* margin: 0 0 .3125em 0; */
+		font-weight: bold; 
+		}
+	h3 { 
+		/* font-size: .6875em; */
+		margin: 0;
+		font-weight: bold; 
+		}
+
+
+/* #Images
+================================================== */
+
+	img {
+		border: none;
+		max-width: 100%;
+		height: auto;
+		/* REMEMBER add width: 100%; to ie sheet */
+	}
+
+/* #Links
+================================================== */
+
+	a {
+		color: $fontColor;
+		text-decoration: none;
+		outline: 0;
+		-webkit-transition: color .25s;
+		-moz-transition: color .25s;
+		-o-transition: color .25s;
+		-ms-transition: color .25s;
+		transition: color .25s;
+		}
+		
+	a:visited { color: $fontColor; text-decoration: none; outline: 0; }
+	a:hover, a:focus { color: $linkColor; text-decoration: underline;}
+	p a, p a:visited { line-height: inherit; }
+
+/* #Lists
+================================================== */
+	
+	ul, ol { margin-bottom: 1.25em; }		/* 20px / 16px = 1.25em */
+
+	ul { list-style: none; }
+
+	li { margin-bottom: .25em; }			/* 4px / 16px = .25em */
+	
+	dt { 
+		float: left;
+		margin-right: .5em;					/* 8px / 16px = .5em */
+		font-weight: bold;
+	}
+
+/* #Forms
+==================================================*/
+			label, legend {
+				display: block;
+				font-weight: bold;
+				font-size: 1.25em;
+				margin: .5em 0 .5em 0; 
+				}
+			
+			select { width: 13.75em; } /* 220px / 16px = 13.75em */
+			
+			.button {
+				background: -webkit-gradient(linear, 0% 45%, 0% 55%, from(lighten(#ccc, 10%)), to(#ccc));
+				background: -moz-linear-gradient(0% 45% 270deg,lighten(#ccc, 10%), #ccc, #ccc 55%);
+				
+				
+				background-color: #ccc;
+				
+				border: 1px solid darken(#ccc, 10%);
+				-webkit-border-radius: .5em;		
+				-moz-border-radius: .5em;
+				-o-border-radius: .5em;		
+				border-radius: .5em;
+		
+				display: block;
+				letter-spacing: .0625em;
+				margin: .5em 0 .5em 0;
+				padding: .5em; /* 8px / 16px = .5em */
+				text-transform: uppercase;
+				font-weight: bold;
+				
+				-webkit-transition: background 0.3s ease;
+				-moz-transition: background 0.3s ease;
+				-o-transition: background 0.3s ease;
+				transition: background 0.3s ease;
+	 		}
+
+			.button:hover {
+				cursor: pointer;
+				text-decoration: none;
+			}
+	
+			.button:active {
+				background: -webkit-gradient(linear, 0% 45%, 0% 55%, from(#ccc), to(lighten(#ccc, 10%)));
+				background: -moz-linear-gradient(0% 45% 90deg,lighten(#ccc, 10%), #ccc, #ccc 55%);
+			}
+
+
+/* #SiteStyles
+================================================== */
+
+	.displayInline { display: inline; }
+	.thickBottemBorder { border-bottom: black solid .25em; }	/* 4px / 16px = .25em */
+	.centerText {text-align: center;}
+	
+	.portfolioContent { margin: 1em 0 0 0; } 
+	
+
+	/* Masthead
+	================================================== */
+
+		.masthead {
+			margin: 0 auto 2em auto;
+			padding: 0 0 1em 0;
+		}
+
+	/* #Footer
+	================================================== */
+
+	
+	.wwtFoorer { margin: 1em 0 3em 0; }
+	
+
+	/* legacy Site Styles */
+
+		.Page {
+			position: relative;
+			width: $containerWidth;
+			margin: 2em auto; 					/* 32px / 16px = 2em */
+			}
+		
+		.indent { margin-left: 1.25em; }		/* 20px / 16px = 1.25em */
+	
+		.inlineFoo { display: inline; }
+	
+		.floatRight { float: right; }
+	
+		.floatLeft { float: left; }
+		
+
+/* TOC ITEMS
+================================================== */
+	
+	.tocHeader {
+		border-bottom: black solid;
+		margin-bottom: 2em;				/* 32px / 16px = 2em */
+	}
+	
+	.tocFooter {
+		margin-top: .05em;				/* 08px / 16px = .5em */
+		padding-top: 2em;				/* 32px / 16px = 2em */
+		border-top: black solid;
+	}
+
+
+/* #Sketchbook
+================================================== */
+
+/* Legacy Sketchbook styles */
+
+	.sketchbookSection {
+		width: 30%;						/* ??? */
+		display: inline-block;
+		padding-bottom: 3em;			/* 48px / 16px = 3em */
+		margin-right: 3%;				/* ??? */
+	}
+
+	.sketchbookImage {
+		max-width: 50%;					/* ??? */
+		float: left;
+	}
+
+	.sketchbookMetadata {
+		font-size: .75em;				/* 12px / 16px = .75em */
+		padding-left: 10%;				/* ??? */
+		float: left;
+		max-width: 39%;					/* ??? */
+	}
+	
+/* #Portfolio
+================================================== */
+	.portfolioCaption { margin: 1em 0 1em 0; }
+	.portfolioNavigation { margin: 0 0 0 0;}
+	.mobilePortfolioNav {margin: 0 0 2em 0; }
+
+	/* Portfolio Legacy Styles */
+
+	.portfolioItem {
+		float: left;
+		width: 25%;						/* ??? */
+	}
+	
+	.portfolioItemLandscape { width: 50%; } /* ??? */
+
+
+/* ---------------- Legacy css. Can I remove this yet? ----------------- */
+
+
+/*-------------Cart----------*/
+
+.addToCart {
+	
+	font-family:  Helvetica, Ariel, sans-serif;
+	line-height: 1.35em;
+	padding: 5px;					/* 5px / 16px = .3125em */
+	background-color: white;
+	border: 1px solid;				/* 1px / 16[x = .0625em */
+	border-color: gray;
+	font-size: 1em;					/* 1px / 16[x = .0625em */
+	margin-top: 1em;				/* 1px / 16[x = .0625em */
+	margin-left: 5px;				/* 5px / 16px = .3125em */
+	cursor: pointer;
+}
+
+.viewCart {
+	
+	font-family:  Helvetica, Ariel, sans-serif;
+	line-height: 1.35em;
+	font-size: 1em;
+	color: #666666;
+	background-color: transparent;
+	border:0;
+	margin: 1em 0 0 0;
+	padding: 0;
+	cursor: pointer;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+}

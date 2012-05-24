@@ -1,0 +1,346 @@
+/* 
+* www.wholewheattoast.com
+* 2011, Shawn Eisenach
+*/
+/* Table of Content
+==================================================
+	#SASSVariables
+	#Reset & Basics
+	#Basic Styles
+	#Typography
+	#Links
+	#Lists
+	#Images
+	#Forms
+	#SiteStyles
+	#Media Queries
+	#New Crap
+*/
+/* #SASSVariables
+==================================================*/
+/*font size plus 6 22px / 16px = 1.375em */
+/* 1024px / 16px = 64em */
+/* #Reset & Basics
+================================================== */
+/* line 35, ../src/screen.scss */
+article, aside, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* fix for HTML5 new elements in older browsers. */
+/* line 37, ../src/screen.scss */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* #Basic Styles
+================================================== */
+/* line 45, ../src/screen.scss */
+body {
+  font: normal 100% black Helvetica, Arial;
+  line-height: 1.375em;
+}
+
+/* line 50, ../src/screen.scss */
+.clear {
+  clear: both;
+}
+
+/* #Typography
+================================================== */
+/* line 58, ../src/screen.scss */
+p {
+  margin-bottom: 1.375em;
+}
+
+/* line 62, ../src/screen.scss */
+h1 {
+  font-size: 2.25em;
+  line-height: 50px;
+  margin-bottom: 0.5em;
+}
+
+/* 16x2.25=36 */
+/* line 63, ../src/screen.scss */
+h2 {
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+/* 16x1.5=24 */
+/* line 64, ../src/screen.scss */
+h3 {
+  font-size: 1.125em;
+  margin-bottom: .5em;
+}
+
+/* 16x1.125=18 */
+/* line 65, ../src/screen.scss */
+h4 {
+  font-size: 0.875em;
+  margin-bottom: .5em;
+}
+
+/* 16x0.875=14 */
+/* #Images
+================================================== */
+/* line 71, ../src/screen.scss */
+img {
+  max-width: 100%;
+  border: 0;
+  /* REMEMBER add width: 100%; to ie sheet */
+}
+
+/* #Links
+================================================== */
+/* line 80, ../src/screen.scss */
+a, a:link, a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+/* line 85, ../src/screen.scss */
+a:active, a:hover {
+  color: green;
+  /* #64AE1B */
+}
+
+/* #Lists
+================================================== */
+/* line 92, ../src/screen.scss */
+ul, ol {
+  margin-bottom: 20px;
+}
+
+/* line 96, ../src/screen.scss */
+ul {
+  list-style: none;
+}
+
+/* line 100, ../src/screen.scss */
+li {
+  margin-bottom: .25em;
+}
+
+/* line 104, ../src/screen.scss */
+dt {
+  float: left;
+  margin-right: .5em;
+  font-weight: bold;
+}
+
+/* #Forms
+================================================== */
+/* #SiteStyles
+================================================== */
+/* line 117, ../src/screen.scss */
+.Page {
+  position: relative;
+  width: 64em;
+  margin: 2em auto;
+  /* 8px / 16px = .5em */
+}
+
+/* line 123, ../src/screen.scss */
+.Container {
+  position: relative;
+  width: 64em;
+  margin: 2em auto;
+  /* 8px / 16px = .5em */
+  padding: 0;
+}
+
+/* line 130, ../src/screen.scss */
+.container {
+  position: relative;
+  width: 64em;
+  margin: 1em auto;
+  padding: 0;
+}
+/* line 135, ../src/screen.scss */
+.container .tpLevel {
+  border-top: green 2em solid;
+}
+
+/* line 140, ../src/screen.scss */
+.masthead {
+  padding: .45em 0 0 0;
+  font-size: 8em;
+  line-height: 1em;
+}
+
+/* line 146, ../src/screen.scss */
+.beta {
+  /* merge class into masthead when finished */
+  font-size: 22px;
+  /* 22px / 16px = 1.375em */
+}
+
+/* line 150, ../src/screen.scss */
+.beta h1, h2, h3, h4, h5, h6 {
+  display: inline;
+  font-size: 22px;
+  /* 22px / 16px = 1.375em */
+}
+
+/* line 155, ../src/screen.scss */
+.indent {
+  margin-left: 20px;
+}
+
+/* line 159, ../src/screen.scss */
+.inlineFoo {
+  display: inline;
+}
+
+/* line 163, ../src/screen.scss */
+.displayInline {
+  display: inline;
+}
+
+/* line 167, ../src/screen.scss */
+.floatRight {
+  float: right;
+}
+
+/* line 171, ../src/screen.scss */
+.floatLeft {
+  float: left;
+}
+
+  	/* TOC ITEMS
+================================================== */
+/* line 178, ../src/screen.scss */
+.tocHeader {
+  border-bottom: black solid;
+  margin-bottom: 2em;
+}
+
+/* line 183, ../src/screen.scss */
+.tocFooter {
+  margin-top: 2em;
+  margin-bottom: 1em;
+  padding-top: 2em;
+  border-top: black solid;
+}
+
+/*-------------Sketchbook------------*/
+/* line 193, ../src/screen.scss */
+.width90 {
+  width: 90%;
+}
+
+/* line 197, ../src/screen.scss */
+.width05 {
+  width: 5%;
+}
+
+/* line 201, ../src/screen.scss */
+.sketchbookSection {
+  width: 30%;
+  display: inline-block;
+  padding-bottom: 3em;
+  margin-right: 3%;
+}
+
+/* line 208, ../src/screen.scss */
+.sketchbookImage {
+  max-width: 50%;
+  float: left;
+}
+
+/* line 213, ../src/screen.scss */
+.sketchbookMetadata {
+  font-size: .75em;
+  padding-left: 10%;
+  float: left;
+  max-width: 39%;
+}
+
+/*-------------Portfolio-------------*/
+/* line 230, ../src/screen.scss */
+.portfolioItem {
+  float: left;
+  width: 25%;
+}
+
+/* line 235, ../src/screen.scss */
+.portfolioItemLandscape {
+  width: 50%;
+}
+
+/* @beep's target screen widths to consider when designing responsively 320, 480, 600, 768, 1024, 1200. #aea */
+  	/* #Media Queries from skeleton
+================================================== */
+/* iPad Portrait/Browser */
+/* Mobile/Browser */
+/* Mobile Landscape/Browser */
+/* Anything smaller than standard 960 */
+/* iPad Portrait Only */
+/* Mobile Only */
+/* Mobile Landscape Only */
+/* ---------------- Lecacy css ----------------- */
+/*-------------Cart----------*/
+/* line 271, ../src/screen.scss */
+.addToCart {
+  font-family: Helvetica, Ariel, sans-serif;
+  line-height: 1.35em;
+  padding: 5px;
+  background-color: white;
+  border: 1px solid;
+  border-color: gray;
+  font-size: 1em;
+  margin-top: 1em;
+  margin-left: 05px;
+  cursor: pointer;
+}
+
+/* line 285, ../src/screen.scss */
+.viewCart {
+  font-family: Helvetica, Ariel, sans-serif;
+  line-height: 1.35em;
+  font-size: 1em;
+  color: #666666;
+  background-color: transparent;
+  border: 0;
+  margin: 1em 0 0 0;
+  padding: 0;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+/* -------------- delete after new page -------- */
+/* line 305, ../src/screen.scss */
+.tempBlock {
+  background-color: black;
+  height: 384px;
+}
+
+/* line 310, ../src/screen.scss */
+.navLine {
+  max-width: 100%;
+  position: relative;
+  margin: 2em auto;
+}
+
+/* line 316, ../src/screen.scss */
+.navItem {
+  float: left;
+  max-width: 16%;
+}
+/* line 319, ../src/screen.scss */
+.navItem p {
+  text-transform: uppercase;
+}
+/* line 322, ../src/screen.scss */
+.navItem img {
+  background-color: black;
+}
+
+/* line 327, ../src/screen.scss */
+.navItem + .navItem {
+  padding-left: 2em;
+}

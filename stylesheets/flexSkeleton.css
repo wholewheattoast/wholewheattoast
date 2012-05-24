@@ -1,0 +1,654 @@
+/* 
+* FlexSkeleton - my attempt at a responsive css framework
+* Based on 960 Grid and getskeleton.com
+* www.wholewheattoast.com
+* 2012, Shawn Eisenach
+*/
+/* #SASSVariables
+==================================================*/
+/* #Base Grid
+================================================== */
+/* line 18, ../src/flexSkeleton.scss */
+.container {
+  position: relative;
+  width: 80%;
+  margin: 2em auto 0 auto;
+  /* 32px / 16px = 2em */
+  padding: 0;
+}
+
+/* line 25, ../src/flexSkeleton.scss */
+.column, .columns {
+  float: left;
+  display: inline;
+  margin-left: 1.041667%;
+  margin-right: 1.041667%;
+}
+
+/* 10px / 960px = 1.041667% */
+/* line 26, ../src/flexSkeleton.scss */
+.row {
+  margin-bottom: 2.083333%;
+}
+
+/* 20px / 960px = 2.083333% */
+/* Nested Column Classes */
+/* line 29, ../src/flexSkeleton.scss */
+.column.alpha, .columns.alpha {
+  margin-left: 0;
+}
+
+/* line 30, ../src/flexSkeleton.scss */
+.column.omega, .columns.omega {
+  margin-right: 0;
+}
+
+/* Base Grid */
+/* line 33, ../src/flexSkeleton.scss */
+.container .one.column {
+  width: 4.166667%;
+}
+
+/* 40px / 960px = 04.166667% */
+/* line 34, ../src/flexSkeleton.scss */
+.container .two.columns {
+  width: 10.416667%;
+}
+
+/* 100px / 960px = 10.416667% */
+/* line 35, ../src/flexSkeleton.scss */
+.container .three.columns {
+  width: 16.666667%;
+}
+
+/* 160px / 960px = 16.666667% */
+/* line 36, ../src/flexSkeleton.scss */
+.container .four.columns {
+  width: 22.916667%;
+}
+
+/* 220px / 960px = 22.916667% */
+/* line 37, ../src/flexSkeleton.scss */
+.container .five.columns {
+  width: 29.166667%;
+}
+
+/* 280px / 960px = 29.166667% */
+/* line 38, ../src/flexSkeleton.scss */
+.container .six.columns {
+  width: 35.416667%;
+}
+
+/* 340px / 960px = 35.416667% */
+/* line 39, ../src/flexSkeleton.scss */
+.container .seven.columns {
+  width: 41.666667%;
+}
+
+/* 400px / 960px = 41.666667% */
+/* line 40, ../src/flexSkeleton.scss */
+.container .eight.columns {
+  width: 47.916667%;
+}
+
+/* 460px / 960px = 47.916667% */
+/* line 41, ../src/flexSkeleton.scss */
+.container .nine.columns {
+  width: 54.166667%;
+}
+
+/* 520px / 960px = 54.166667% */
+/* line 42, ../src/flexSkeleton.scss */
+.container .ten.columns {
+  width: 60.416667%;
+}
+
+/* 580px / 960px = 60.416667% */
+/* line 43, ../src/flexSkeleton.scss */
+.container .eleven.columns {
+  width: 66.666667%;
+}
+
+/* 640px / 960px = 66.666667% */
+/* line 44, ../src/flexSkeleton.scss */
+.container .twelve.columns {
+  width: 72.916667%;
+}
+
+/* 700px / 960px = 72.916667% */
+/* line 45, ../src/flexSkeleton.scss */
+.container .thirteen.columns {
+  width: 79.166667%;
+}
+
+/* 760px / 960px = 79.166667% */
+/* line 46, ../src/flexSkeleton.scss */
+.container .fourteen.columns {
+  width: 85.416667%;
+}
+
+/* 820px / 960px = 85.416667% */
+/* line 47, ../src/flexSkeleton.scss */
+.container .fifteen.columns {
+  width: 91.666667%;
+}
+
+/* 880px / 960px = 91.666667% */
+/* line 48, ../src/flexSkeleton.scss */
+.container .sixteen.columns {
+  width: 97.916667%;
+}
+
+/* 940px / 960px = 97.916667% */
+/* line 50, ../src/flexSkeleton.scss */
+.container .one-third.column {
+  width: 31.25%;
+}
+
+/* 300px / 960 px = 31.25% */
+/* line 51, ../src/flexSkeleton.scss */
+.container .two-thirds.column {
+  width: 64.583333%;
+}
+
+/* 620px / 960 px = 64.583333% */
+/* Offsets */
+/* line 54, ../src/flexSkeleton.scss */
+.container .offset-by-one {
+  padding-left: 6.25%;
+}
+
+/* 60px / 960px = 6.25% */
+/* line 55, ../src/flexSkeleton.scss */
+.container .offset-by-two {
+  padding-left: 12.5%;
+}
+
+/* 120px / 960px = 12.5% */
+/* line 56, ../src/flexSkeleton.scss */
+.container .offset-by-three {
+  padding-left: 18.75%;
+}
+
+/* 180px / 960px = 18.75% */
+/* line 57, ../src/flexSkeleton.scss */
+.container .offset-by-four {
+  padding-left: 25%;
+}
+
+/* 240px / 960px = 25% */
+/* line 58, ../src/flexSkeleton.scss */
+.container .offset-by-five {
+  padding-left: 31.25%;
+}
+
+/* 300px / 960px = 31.25% */
+/* line 59, ../src/flexSkeleton.scss */
+.container .offset-by-six {
+  padding-left: 37.5%;
+}
+
+/* 360px / 960px = 37.5% */
+/* line 60, ../src/flexSkeleton.scss */
+.container .offset-by-seven {
+  padding-left: 43.75%;
+}
+
+/* 420px / 960px = 43.75% */
+/* line 61, ../src/flexSkeleton.scss */
+.container .offset-by-eight {
+  padding-left: 50%;
+}
+
+/* 480px / 960px = 50% */
+/* line 62, ../src/flexSkeleton.scss */
+.container .offset-by-nine {
+  padding-left: 56.25%;
+}
+
+/* 540px / 960px = 56.25% */
+/* line 63, ../src/flexSkeleton.scss */
+.container .offset-by-ten {
+  padding-left: 56.25%;
+}
+
+/* 600px / 960px = 62.50% */
+/* line 64, ../src/flexSkeleton.scss */
+.container .offset-by-eleven {
+  padding-left: 68.75%;
+}
+
+/* 660px / 960px = 68.75% */
+/* line 65, ../src/flexSkeleton.scss */
+.container .offset-by-twelve {
+  padding-left: 75%;
+}
+
+/* 720px / 960px = 75% */
+/* line 66, ../src/flexSkeleton.scss */
+.container .offset-by-thirteen {
+  padding-left: 81.25%;
+}
+
+/* 780px / 960px = 81.25% */
+/* line 67, ../src/flexSkeleton.scss */
+.container .offset-by-fourteen {
+  padding-left: 87.50%;
+}
+
+/* 840px / 960px = 87.50% */
+/* line 68, ../src/flexSkeleton.scss */
+.container .offset-by-fifteen {
+  padding-left: 93.75%;
+}
+
+/* 900px / 960px = 93.75% */
+    /* #Clearing
+================================================== */
+/* Self Clearing Goodness */
+/* line 74, ../src/flexSkeleton.scss */
+.container:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+/* Use clearfix class on parent to clear nested columns,
+or wrap each row of columns in a <div class="row"> */
+/* line 81, ../src/flexSkeleton.scss */
+.clearfix:before,
+.clearfix:after,
+.row:before,
+.row:after {
+  content: '\0020';
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+/* line 89, ../src/flexSkeleton.scss */
+.row:after,
+.clearfix:after {
+  clear: both;
+}
+
+/* line 92, ../src/flexSkeleton.scss */
+.row,
+.clearfix {
+  zoom: 1;
+}
+
+/* You can also use a <br class="clear" /> to clear columns */
+/* line 96, ../src/flexSkeleton.scss */
+.clear {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+@media only screen and (min-width: 960px) {
+  /* line 107, ../src/flexSkeleton.scss */
+  .mobilePortfolioNav {
+    display: none;
+  }
+}
+    /* #Tablet (Portrait)
+================================================== */
+/* Note: Design for a width of 768px */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 120, ../src/flexSkeleton.scss */
+  .mobilePortfolioNav {
+    display: none;
+  }
+
+  /* line 122, ../src/flexSkeleton.scss */
+  .container {
+    width: 768px;
+  }
+
+  /* line 125, ../src/flexSkeleton.scss */
+  .container .column,
+  .container .columns {
+    margin-left: 1.302083%;
+    margin-right: 1.302083%;
+  }
+
+  /* 10px / 768px = 1.302083% */
+  /* line 127, ../src/flexSkeleton.scss */
+  .column.alpha, .columns.alpha {
+    margin-left: 0;
+    margin-right: 1.302083%;
+  }
+
+  /* line 128, ../src/flexSkeleton.scss */
+  .column.omega, .columns.omega {
+    margin-right: 0;
+    margin-left: 1.302083%;
+  }
+
+  /* line 130, ../src/flexSkeleton.scss */
+  .container .one.column {
+    width: 03.645833%;
+  }
+
+  /* 28px / 768px = 3.645833% */
+  /* line 131, ../src/flexSkeleton.scss */
+  .container .two.columns {
+    width: 09.895833%;
+  }
+
+  /* 76px / 768px = 09.895833% */
+  /* line 132, ../src/flexSkeleton.scss */
+  .container .three.columns {
+    width: 16.145833%;
+  }
+
+  /* 124px / 768px = 16.145833% */
+  /* line 133, ../src/flexSkeleton.scss */
+  .container .four.columns {
+    width: 22.395833%;
+  }
+
+  /* 172px / 768px = 22.395833% */
+  /* line 134, ../src/flexSkeleton.scss */
+  .container .five.columns {
+    width: 28.645833%;
+  }
+
+  /* 220px / 768px = 28.645833% */
+  /* line 135, ../src/flexSkeleton.scss */
+  .container .six.columns {
+    width: 34.895833%;
+  }
+
+  /* 268px / 768px = 34.895833% */
+  /* line 136, ../src/flexSkeleton.scss */
+  .container .seven.columns {
+    width: 41.145833%;
+  }
+
+  /* 316px / 768px = 41.145833% */
+  /* line 137, ../src/flexSkeleton.scss */
+  .container .eight.columns {
+    width: 47.395833%;
+  }
+
+  /* 364px / 768px = 47.395833% */
+  /* line 138, ../src/flexSkeleton.scss */
+  .container .nine.columns {
+    width: 53.645833%;
+  }
+
+  /* 412px / 768px = 53.645833% */
+  /* line 139, ../src/flexSkeleton.scss */
+  .container .ten.columns {
+    width: 59.895833%;
+  }
+
+  /* 460px / 768px = 59.895833% */
+  /* line 140, ../src/flexSkeleton.scss */
+  .container .eleven.columns {
+    width: 66.145833%;
+  }
+
+  /* 508px / 768px = 66.145833% */
+  /* line 141, ../src/flexSkeleton.scss */
+  .container .twelve.columns {
+    width: 72.395833%;
+  }
+
+  /* 556px / 768px = 72.395833% */
+  /* line 142, ../src/flexSkeleton.scss */
+  .container .thirteen.columns {
+    width: 78.645833%;
+  }
+
+  /* 604px / 768px = 78.645833% */
+  /* line 143, ../src/flexSkeleton.scss */
+  .container .fourteen.columns {
+    width: 84.895833%;
+  }
+
+  /* 652px / 768px = 84.895833% */
+  /* line 144, ../src/flexSkeleton.scss */
+  .container .fifteen.columns {
+    width: 91.145833%;
+  }
+
+  /* 700px / 768px = 91.145833% */
+  /* line 145, ../src/flexSkeleton.scss */
+  .container .sixteen.columns {
+    width: 97.395833%;
+  }
+
+  /* 748px / 768px = 97.395833% */
+  /* line 147, ../src/flexSkeleton.scss */
+  .container .one-third.column {
+    width: 30.729167%;
+  }
+
+  /* 236px / 768px = 30.729167% */
+  /* line 148, ../src/flexSkeleton.scss */
+  .container .two-thirds.column {
+    width: 64.0625%;
+  }
+
+  /* 492px / 768px = 64.0625% */
+  /* Offsets */
+  /* line 151, ../src/flexSkeleton.scss */
+  .container .offset-by-one {
+    padding-left: 6.25%;
+  }
+
+  /* 48px / 768px = 6.25% */
+  /* line 152, ../src/flexSkeleton.scss */
+  .container .offset-by-two {
+    padding-left: 12.50%;
+  }
+
+  /* 96px / 768px = 12.50% */
+  /* line 153, ../src/flexSkeleton.scss */
+  .container .offset-by-three {
+    padding-left: 18.75%;
+  }
+
+  /* 144px / 768px = 18.75% */
+  /* line 154, ../src/flexSkeleton.scss */
+  .container .offset-by-four {
+    padding-left: 25%;
+  }
+
+  /* 192px / 768px = 25% */
+  /* line 155, ../src/flexSkeleton.scss */
+  .container .offset-by-five {
+    padding-left: 31.25%;
+  }
+
+  /* 240px / 768px = 31.25% */
+  /* line 156, ../src/flexSkeleton.scss */
+  .container .offset-by-six {
+    padding-left: 37.50%;
+  }
+
+  /* 288px / 768px = 37.50% */
+  /* line 157, ../src/flexSkeleton.scss */
+  .container .offset-by-seven {
+    padding-left: 43.75%;
+  }
+
+  /* 336px / 768px = 43.75% */
+  /* line 158, ../src/flexSkeleton.scss */
+  .container .offset-by-eight {
+    padding-left: 50%;
+  }
+
+  /* 384px / 768px = 45.3125% */
+  /* line 159, ../src/flexSkeleton.scss */
+  .container .offset-by-nine {
+    padding-left: 56.25%;
+  }
+
+  /* 432px / 768px = 56.25% */
+  /* line 160, ../src/flexSkeleton.scss */
+  .container .offset-by-ten {
+    padding-left: 62.50%;
+  }
+
+  /* 480px / 768px = 62.50% */
+  /* line 161, ../src/flexSkeleton.scss */
+  .container .offset-by-eleven {
+    padding-left: 68.75%;
+  }
+
+  /* 528px / 768px = 68.75% */
+  /* line 162, ../src/flexSkeleton.scss */
+  .container .offset-by-twelve {
+    padding-left: 75%;
+  }
+
+  /* 576px / 768px = 75% */
+  /* line 163, ../src/flexSkeleton.scss */
+  .container .offset-by-thirteen {
+    padding-left: 81.25%;
+  }
+
+  /* 624px / 768px = 81.25% */
+  /* line 164, ../src/flexSkeleton.scss */
+  .container .offset-by-fourteen {
+    padding-left: 87.50%;
+  }
+
+  /* 672px / 768px = 87.50% */
+  /* line 165, ../src/flexSkeleton.scss */
+  .container .offset-by-fifteen {
+    padding-left: 93.75%;
+  }
+
+  /* 720px / 768px = 93.75% */
+}
+    /*  #Mobile (Portrait)
+================================================== */
+/* Note: Design for a width of 320px */
+@media only screen and (max-width: 767px) {
+  /* line 175, ../src/flexSkeleton.scss */
+  .portfolioNav {
+    display: none;
+  }
+
+  /* line 176, ../src/flexSkeleton.scss */
+  .mobilePortfolioNav {
+    display: block;
+  }
+
+  /* line 178, ../src/flexSkeleton.scss */
+  .container {
+    width: 300px;
+  }
+
+  /* line 179, ../src/flexSkeleton.scss */
+  .columns, .column {
+    margin: 0;
+  }
+
+  /* line 198, ../src/flexSkeleton.scss */
+  .container .one.column,
+  .container .two.columns,
+  .container .three.columns,
+  .container .four.columns,
+  .container .five.columns,
+  .container .six.columns,
+  .container .seven.columns,
+  .container .eight.columns,
+  .container .nine.columns,
+  .container .ten.columns,
+  .container .eleven.columns,
+  .container .twelve.columns,
+  .container .thirteen.columns,
+  .container .fourteen.columns,
+  .container .fifteen.columns,
+  .container .sixteen.columns,
+  .container .one-third.column,
+  .container .two-thirds.column {
+    width: 300px;
+  }
+
+  /* 300px / 300px = 100% */
+  /* Offsets */
+  /* line 215, ../src/flexSkeleton.scss */
+  .container .offset-by-one,
+  .container .offset-by-two,
+  .container .offset-by-three,
+  .container .offset-by-four,
+  .container .offset-by-five,
+  .container .offset-by-six,
+  .container .offset-by-seven,
+  .container .offset-by-eight,
+  .container .offset-by-nine,
+  .container .offset-by-ten,
+  .container .offset-by-eleven,
+  .container .offset-by-twelve,
+  .container .offset-by-thirteen,
+  .container .offset-by-fourteen,
+  .container .offset-by-fifteen {
+    padding-left: 0;
+  }
+}
+/* #Mobile (Landscape)
+================================================== */
+/* Note: Design for a width of 480px */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  /* line 231, ../src/flexSkeleton.scss */
+  .container {
+    width: 420px;
+  }
+
+  /* line 232, ../src/flexSkeleton.scss */
+  .columns, .column {
+    margin: 0;
+  }
+
+  /* line 251, ../src/flexSkeleton.scss */
+  .container .one.column,
+  .container .two.columns,
+  .container .three.columns,
+  .container .four.columns,
+  .container .five.columns,
+  .container .six.columns,
+  .container .seven.columns,
+  .container .eight.columns,
+  .container .nine.columns,
+  .container .ten.columns,
+  .container .eleven.columns,
+  .container .twelve.columns,
+  .container .thirteen.columns,
+  .container .fourteen.columns,
+  .container .fifteen.columns,
+  .container .sixteen.columns,
+  .container .one-third.column,
+  .container .two-thirds.column {
+    width: 100%;
+  }
+
+  /* 420px / 420px = 100% */
+  /* line 255, ../src/flexSkeleton.scss */
+  .portfolioNavigation {
+    margin: 2em 0 2em 0;
+  }
+
+  /* line 256, ../src/flexSkeleton.scss */
+  .portfolioNav {
+    display: none;
+  }
+
+  /* line 257, ../src/flexSkeleton.scss */
+  .mobilePortfolioNav {
+    display: block;
+  }
+}
