@@ -1,5 +1,9 @@
 #git ignore for wholewheattoast
 
+.DS_Store
 .hg
 .sass-cache
+
+
 /mint
+/image
