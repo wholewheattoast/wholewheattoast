@@ -9,12 +9,11 @@
 /* #SASSVariables
 ==================================================*/
 	
-	$containerWidth: 80%;
-
+	$containerWidth: 55%; /* was 80  prob trigger chance w/media q's */
 
 /* #Base Grid
 ================================================== */
-
+    
     .container { 
     	position: relative;
     	width: $containerWidth;

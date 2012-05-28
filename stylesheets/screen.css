@@ -19,13 +19,13 @@
 /* 16px / 16px = 1em */
 /* #Reset & Basics
 ================================================== */
-/* line 33, ../src/screen.scss */
+/* line 34, ../src/screen.scss */
 article, aside, figure, footer, header, hgroup, menu, nav, section {
   display: block;
 }
 
 /* fix for HTML5 new elements in older browsers. */
-/* line 35, ../src/screen.scss */
+/* line 36, ../src/screen.scss */
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -37,7 +37,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 
 /* #Basic Styles
 ================================================== */
-/* line 46, ../src/screen.scss */
+/* line 47, ../src/screen.scss */
 body {
   font: normal 100% black Helvetica, Arial;
   line-height: 1em;
@@ -45,27 +45,36 @@ body {
 
 /* #Typography
 ================================================== */
-/* line 54, ../src/screen.scss */
+/* line 55, ../src/screen.scss */
 p {
   margin-bottom: 1em;
 }
 
-/* line 58, ../src/screen.scss */
+/* line 59, ../src/screen.scss */
+figcaption {
+  font-family: Georgia;
+  font: normal 100% black Georgia, serif;
+  text-align: center;
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+
+/* line 67, ../src/screen.scss */
 h1 {
   /* font-size: 1.5em; */
   line-height: 1.875em;
   font-weight: bold;
 }
 
-/* line 63, ../src/screen.scss */
+/* line 72, ../src/screen.scss */
 h2 {
   /* font-size: 1em; */
   line-height: 1.25em;
-  /* margin: 0 0 .3125em 0; */
+  margin: 0 0 .3125em 0;
   font-weight: bold;
 }
 
-/* line 69, ../src/screen.scss */
+/* line 78, ../src/screen.scss */
 h3 {
   /* font-size: .6875em; */
   margin: 0;
@@ -74,7 +83,7 @@ h3 {
 
 /* #Images
 ================================================== */
-/* line 79, ../src/screen.scss */
+/* line 88, ../src/screen.scss */
 img {
   border: none;
   max-width: 100%;
@@ -84,7 +93,7 @@ img {
 
 /* #Links
 ================================================== */
-/* line 89, ../src/screen.scss */
+/* line 98, ../src/screen.scss */
 a {
   color: black;
   text-decoration: none;
@@ -96,44 +105,44 @@ a {
   transition: color .25s;
 }
 
-/* line 100, ../src/screen.scss */
+/* line 109, ../src/screen.scss */
 a:visited {
   color: black;
   text-decoration: none;
   outline: 0;
 }
 
-/* line 101, ../src/screen.scss */
+/* line 110, ../src/screen.scss */
 a:hover, a:focus {
   color: green;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
-/* line 102, ../src/screen.scss */
+/* line 111, ../src/screen.scss */
 p a, p a:visited {
   line-height: inherit;
 }
 
 /* #Lists
 ================================================== */
-/* line 107, ../src/screen.scss */
+/* line 116, ../src/screen.scss */
 ul, ol {
   margin-bottom: 1.25em;
 }
 
 /* 20px / 16px = 1.25em */
-/* line 109, ../src/screen.scss */
+/* line 118, ../src/screen.scss */
 ul {
   list-style: none;
 }
 
-/* line 111, ../src/screen.scss */
+/* line 120, ../src/screen.scss */
 li {
   margin-bottom: .25em;
 }
 
 /* 4px / 16px = .25em */
-/* line 113, ../src/screen.scss */
+/* line 122, ../src/screen.scss */
 dt {
   float: left;
   margin-right: .5em;
@@ -143,7 +152,7 @@ dt {
 
 /* #Forms
 ==================================================*/
-/* line 121, ../src/screen.scss */
+/* line 130, ../src/screen.scss */
 label, legend {
   display: block;
   font-weight: bold;
@@ -151,13 +160,13 @@ label, legend {
   margin: .5em 0 .5em 0;
 }
 
-/* line 128, ../src/screen.scss */
+/* line 137, ../src/screen.scss */
 select {
   width: 13.75em;
 }
 
 /* 220px / 16px = 13.75em */
-/* line 130, ../src/screen.scss */
+/* line 139, ../src/screen.scss */
 .button {
   background: -webkit-gradient(linear, 0% 45%, 0% 55%, from(#e6e6e6), to(#cccccc));
   background: -moz-linear-gradient(0% 45% 270deg, #e6e6e6, #cccccc, #cccccc 55%);
@@ -180,13 +189,13 @@ select {
   transition: background 0.3s ease;
 }
 
-/* line 156, ../src/screen.scss */
+/* line 165, ../src/screen.scss */
 .button:hover {
   cursor: pointer;
   text-decoration: none;
 }
 
-/* line 161, ../src/screen.scss */
+/* line 170, ../src/screen.scss */
 .button:active {
   background: -webkit-gradient(linear, 0% 45%, 0% 55%, from(#cccccc), to(#e6e6e6));
   background: -moz-linear-gradient(0% 45% 90deg, #e6e6e6, #cccccc, #cccccc 55%);
@@ -194,30 +203,30 @@ select {
 
 /* #SiteStyles
 ================================================== */
-/* line 170, ../src/screen.scss */
+/* line 179, ../src/screen.scss */
 .displayInline {
   display: inline;
 }
 
-/* line 171, ../src/screen.scss */
+/* line 180, ../src/screen.scss */
 .thickBottemBorder {
   border-bottom: black solid .25em;
 }
 
 /* 4px / 16px = .25em */
-/* line 172, ../src/screen.scss */
+/* line 181, ../src/screen.scss */
 .centerText {
   text-align: center;
 }
 
-/* line 174, ../src/screen.scss */
+/* line 183, ../src/screen.scss */
 .portfolioContent {
   margin: 1em 0 0 0;
 }
 
 /* Masthead
 ================================================== */
-/* line 180, ../src/screen.scss */
+/* line 189, ../src/screen.scss */
 .masthead {
   margin: 0 auto 2em auto;
   padding: 0 0 1em 0;
@@ -225,13 +234,13 @@ select {
 
 /* #Footer
 ================================================== */
-/* line 189, ../src/screen.scss */
+/* line 198, ../src/screen.scss */
 .wwtFoorer {
   margin: 1em 0 3em 0;
 }
 
 /* legacy Site Styles */
-/* line 194, ../src/screen.scss */
+/* line 203, ../src/screen.scss */
 .Page {
   position: relative;
   width: 90%;
@@ -239,37 +248,37 @@ select {
   /* 32px / 16px = 2em */
 }
 
-/* line 200, ../src/screen.scss */
+/* line 209, ../src/screen.scss */
 .indent {
   margin-left: 1.25em;
 }
 
 /* 20px / 16px = 1.25em */
-/* line 202, ../src/screen.scss */
+/* line 211, ../src/screen.scss */
 .inlineFoo {
   display: inline;
 }
 
-/* line 204, ../src/screen.scss */
+/* line 213, ../src/screen.scss */
 .floatRight {
   float: right;
 }
 
-/* line 206, ../src/screen.scss */
+/* line 215, ../src/screen.scss */
 .floatLeft {
   float: left;
 }
 
 /* TOC ITEMS
 ================================================== */
-/* line 212, ../src/screen.scss */
+/* line 221, ../src/screen.scss */
 .tocHeader {
   border-bottom: black solid;
   margin-bottom: 2em;
   /* 32px / 16px = 2em */
 }
 
-/* line 217, ../src/screen.scss */
+/* line 226, ../src/screen.scss */
 .tocFooter {
   margin-top: .05em;
   /* 08px / 16px = .5em */
@@ -281,7 +290,7 @@ select {
 /* #Sketchbook
 ================================================== */
 /* Legacy Sketchbook styles */
-/* line 229, ../src/screen.scss */
+/* line 238, ../src/screen.scss */
 .sketchbookSection {
   width: 30%;
   /* ??? */
@@ -292,14 +301,14 @@ select {
   /* ??? */
 }
 
-/* line 236, ../src/screen.scss */
+/* line 245, ../src/screen.scss */
 .sketchbookImage {
   max-width: 50%;
   /* ??? */
   float: left;
 }
 
-/* line 241, ../src/screen.scss */
+/* line 250, ../src/screen.scss */
 .sketchbookMetadata {
   font-size: .75em;
   /* 12px / 16px = .75em */
@@ -312,30 +321,30 @@ select {
 
 /* #Portfolio
 ================================================== */
-/* line 250, ../src/screen.scss */
+/* line 259, ../src/screen.scss */
 .portfolioCaption {
   margin: 1em 0 1em 0;
 }
 
-/* line 251, ../src/screen.scss */
+/* line 260, ../src/screen.scss */
 .portfolioNavigation {
   margin: 0 0 0 0;
 }
 
-/* line 252, ../src/screen.scss */
+/* line 261, ../src/screen.scss */
 .mobilePortfolioNav {
   margin: 0 0 2em 0;
 }
 
 /* Portfolio Legacy Styles */
-/* line 256, ../src/screen.scss */
+/* line 265, ../src/screen.scss */
 .portfolioItem {
   float: left;
   width: 25%;
   /* ??? */
 }
 
-/* line 261, ../src/screen.scss */
+/* line 270, ../src/screen.scss */
 .portfolioItemLandscape {
   width: 50%;
 }
@@ -343,7 +352,7 @@ select {
 /* ??? */
 /* ---------------- Legacy css. Can I remove this yet? ----------------- */
 /*-------------Cart----------*/
-/* line 269, ../src/screen.scss */
+/* line 278, ../src/screen.scss */
 .addToCart {
   font-family: Helvetica, Ariel, sans-serif;
   line-height: 1.35em;
@@ -362,7 +371,7 @@ select {
   cursor: pointer;
 }
 
-/* line 283, ../src/screen.scss */
+/* line 292, ../src/screen.scss */
 .viewCart {
   font-family: Helvetica, Ariel, sans-serif;
   line-height: 1.35em;
