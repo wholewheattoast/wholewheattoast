@@ -13,9 +13,9 @@
 .container {
   position: relative;
   width: 55%;
-  margin: 2em auto 0 auto;
+  margin: 2em auto;
   /* 32px / 16px = 2em */
-  padding: 0;
+  padding: 1em;
 }
 
 /* line 24, ../src/flexSkeleton.scss */
@@ -538,27 +538,27 @@ or wrap each row of columns in a <div class="row"> */
 ================================================== */
 /* Note: Design for a width of 320px */
 @media only screen and (max-width: 767px) {
-  /* line 174, ../src/flexSkeleton.scss */
+  /* line 176, ../src/flexSkeleton.scss */
   .portfolioNav {
     display: none;
   }
 
-  /* line 175, ../src/flexSkeleton.scss */
+  /* line 177, ../src/flexSkeleton.scss */
   .mobilePortfolioNav {
     display: block;
   }
 
-  /* line 177, ../src/flexSkeleton.scss */
+  /* line 179, ../src/flexSkeleton.scss */
   .container {
     width: 300px;
   }
 
-  /* line 178, ../src/flexSkeleton.scss */
+  /* line 180, ../src/flexSkeleton.scss */
   .columns, .column {
     margin: 0;
   }
 
-  /* line 197, ../src/flexSkeleton.scss */
+  /* line 199, ../src/flexSkeleton.scss */
   .container .one.column,
   .container .two.columns,
   .container .three.columns,
@@ -582,7 +582,7 @@ or wrap each row of columns in a <div class="row"> */
 
   /* 300px / 300px = 100% */
   /* Offsets */
-  /* line 214, ../src/flexSkeleton.scss */
+  /* line 216, ../src/flexSkeleton.scss */
   .container .offset-by-one,
   .container .offset-by-two,
   .container .offset-by-three,

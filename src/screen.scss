@@ -176,6 +176,8 @@
 /* #SiteStyles
 ================================================== */
 
+
+	.pinkBackground {background-color: #f5f0f5;}
 	.displayInline { display: inline; }
 	.thickBottemBorder { border-bottom: black solid .25em; }	/* 4px / 16px = .25em */
 	.centerText {text-align: center;}
@@ -257,7 +259,6 @@
 /* #Portfolio
 ================================================== */
 	.portfolioCaption { margin: 1em 0 1em 0; }
-	.portfolioNavigation { margin: 0 0 0 0;}
 	.mobilePortfolioNav {margin: 0 0 2em 0; }
 
 	/* Portfolio Legacy Styles */
